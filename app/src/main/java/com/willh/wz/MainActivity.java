@@ -449,7 +449,6 @@ public class MainActivity extends Activity implements MenuDialogFragment.MenuCli
     }
 
     private void updateMenu(boolean first) {
-/*
         if (mMenuTask != null) {
             mMenuTask.cancel(false);
         }
@@ -492,7 +491,6 @@ public class MainActivity extends Activity implements MenuDialogFragment.MenuCli
 
         });
         mMenuTask.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
-*/
     }
 
     private void checkVersion() {
@@ -634,7 +632,7 @@ public class MainActivity extends Activity implements MenuDialogFragment.MenuCli
         try {
             Intent intent = new Intent();
             intent.setAction("android.intent.action.VIEW");
-            Uri content_url = Uri.parse("https://github.com/Willh92/GameWxQRlogin/issues");
+            Uri content_url = Uri.parse("https://github.com/carnivalist/GameWxQRlogin/issues");
             intent.setData(content_url);
             startActivity(intent);
         } catch (Exception ignore) {

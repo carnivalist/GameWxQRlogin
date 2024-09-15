@@ -2,9 +2,12 @@ package com.willh.wz.bean;
 
 import android.text.TextUtils;
 
+import com.willh.wz.util.MenuUtil;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -13,6 +16,7 @@ public class MenuList implements JsonParse<MenuList> {
     public final static int DEFAULT_VERSION = 1;
 
     public int version = DEFAULT_VERSION;
+    private static final Map<String, GameInfo> DEFAULT_GAMES = Collections.unmodifiableMap(new Games());
     public Map<String, GameInfo> menu;
 
     public boolean isCache = false;
@@ -63,7 +67,13 @@ public class MenuList implements JsonParse<MenuList> {
                 if (menuList == null)
                     menuList = new MenuList();
                 menuList.version = version;
-                menuList.menu = menu;
+//                menuList.menu = menu;
+
+                menuList.menu = DEFAULT_GAMES;
+
+                GameInfo gameInfo = DEFAULT_GAMES.get("地下城与勇士起源");
+                menu.clear();
+                menu.put("地下城与勇士起源" , gameInfo);
                 return menuList;
             }
         } catch (Exception ignore) {

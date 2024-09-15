@@ -21,7 +21,6 @@ public class MenuUtil {
     private static final Map<String, GameInfo> DEFAULT_GAMES = Collections.unmodifiableMap(new Games());
 
     public static MenuList getMenu(Context context) {
-/*
         MenuList menuList = null;
         try {
             String menuJson = FileUtil.readFromFile(new File(context.getFilesDir(), Constant.FILE_MENU));
@@ -36,11 +35,6 @@ public class MenuUtil {
             menuList = new MenuList();
             menuList.menu = DEFAULT_GAMES;
         }
-*/
-        MenuList menuList = null;
-        menuList = new MenuList();
-        menuList.menu = DEFAULT_GAMES;
-
         return menuList;
     }
 
