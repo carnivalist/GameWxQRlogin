@@ -449,6 +449,7 @@ public class MainActivity extends Activity implements MenuDialogFragment.MenuCli
     }
 
     private void updateMenu(boolean first) {
+/*
         if (mMenuTask != null) {
             mMenuTask.cancel(false);
         }
@@ -491,6 +492,7 @@ public class MainActivity extends Activity implements MenuDialogFragment.MenuCli
 
         });
         mMenuTask.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+*/
     }
 
     private void checkVersion() {
