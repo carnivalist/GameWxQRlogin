@@ -4,6 +4,14 @@ import java.util.LinkedHashMap;
 
 public final class Games extends LinkedHashMap<String, GameInfo> {
     {
+        put("地下城与勇士起源", new GameInfo("地下城与勇士起源", "wx15e4ed4511fd50c9", "com.tencent.cdnf",
+                "https://mmgame.qpic.cn/image/394ab9e9e4c3f147af9757a395a6bf44c1665284395d45bc9925e27c147688da/0",
+                "1.打开游戏，注销当前登录，微信取消授权，然后再次登录但不授权（停留在授权页面)\n" +
+                    "2. 切换到扫码APP，出现二维码后点击分享给对方。\n" +
+                    "3.切换回扫码APP内等待对方扫码授权，成功授权后会自动跳转。\n" +
+                    "4.成功跳转后，登录成功"));
+
+/*
         put("王者荣耀", new GameInfo("王者荣耀", "wx95a3a4d7c627e07d", "com.tencent.tmgp.sgame", "https://mmocgame.qpic.cn/wechatgame/duc2TvpEgSR53WIVgEfYglMDO8O4iaficqga0EgQichficmUAp9Ydzb0nOggezEttDMJ/0", "wzry"));
         put("英雄联盟手游", new GameInfo("英雄联盟", "wx5a611599efa17e78", "com.tencent.lolm"
                 , "1.打开要登录的游戏，注销当前登录，杀掉游戏进程\n" +
@@ -15,6 +23,7 @@ public final class Games extends LinkedHashMap<String, GameInfo> {
         put("腾讯欢乐麻将", new GameInfo("腾讯欢乐麻将", "wx3bef52104e238bff", "com.qqgame.happymj","https://mmgame.qpic.cn/image/f26c75e9e9783af0226ecaaa672a232f77643dea731de77a00bde56d150226dc","txhlmjqj"));
         put("欢乐斗地主", new GameInfo("欢乐斗地主", "wx76fc280041c16519", "com.qqgame.hlddz","https://mmgame.qpic.cn/image/d9f4df135d95be5a847fe2684b79acf64f0b96dab86f42a57019d213aa917aad","hlddz"));
         put("QQ飞车手游", new GameInfo("QQ飞车手游", "wx360b06d575d20cc3", "com.tencent.tmgp.speedmobile","https://mmgame.qpic.cn/image/5fb69dbda9471b96ef99e29c3b2e909e85682c0211b2806551cd747fe7507a7e/0","qqfc"));
+*/
     }
 }
 

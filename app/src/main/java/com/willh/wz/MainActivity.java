@@ -529,7 +529,7 @@ public class MainActivity extends Activity implements MenuDialogFragment.MenuCli
 
     private void checkGameUpdate() {
         if (mVersion != null && mVersion.menuVersion > mMenuList.version) {
-            showUpdateDialog();
+//            showUpdateDialog();
         }
     }
 
